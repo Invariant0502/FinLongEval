@@ -2,8 +2,8 @@
 
 如需要完整评测报告，请联系以下邮箱：
 
-- **北邮金融大数据安全实验室**：yangzl@bupt.edu.cn
+- **XXXX-1**：XXXX-2
 
-- **熵简科技 AI Lab**：liyu@entropyreduce.com
+- **XXXX-3**：XXXX-4
 
 **注意：本评测报告仅用于学术研究**
