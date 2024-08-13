@@ -3,7 +3,7 @@
   <img src="https://github.com/valuesimplex/FinLongEval/blob/main/fig/logo.png" width="500px" height="120px">
 </div>
 
-本项目由**北邮金融大数据安全实验室**和**熵简科技 AI Lab** 共同发起，从项目筹备、评测集构建、工具评测到评测报告撰写共历时近5个月时间。本次工作为阶段性成果输出，也欢迎其他有兴趣参与本项目的个人或组织加入，为评测集的持续完善贡献力量，我们将在文末持续更新主要贡献者和贡献单位。
+本项目由**XXXX-1**和**XXXX-2** 共同发起，从项目筹备、评测集构建、工具评测到评测报告撰写共历时近5个月时间。本次工作为阶段性成果输出，也欢迎其他有兴趣参与本项目的个人或组织加入，为评测集的持续完善贡献力量，我们将在文末持续更新主要贡献者和贡献单位。
 ### 为什么需要金融长文档评测集 ###
 自 ChatGPT 发布以来的这一年，大语言模型正以极快的发展速度一路狂飙演进，据不完全统计，中国企业发布的大模型数量已经过百。但是，大模型本身并不直接产生价值，需要与各个行业的业务场景深度结合才能真正发挥作用。如此，大模型的"机器智能"才能真正带来生产力升级。 
 
@@ -185,9 +185,8 @@ FinLongEval 评测集的整体工作计划如下：
 ## 完整评测集获取
 请通过以下任意邮箱联系获取：
 
-- **北邮金融大数据安全实验室**：yangzl@bupt.edu.cn
-
-- **熵简科技 AI Lab**：liyu@entropyreduce.com
+- **XXXX-3**：XXXX-4
+- **XXXX-5**：XXXX-6
 
 联系时请提供以下信息：
 ```
@@ -201,7 +200,7 @@ FinLongEval 评测集的整体工作计划如下：
 
 ```
 @online{FinLongEval,
-  author = {Xinguang Jiang, Sihan Hu, Dingfu Yu, Yuhao Zhang, Zhongliang Yang, Yu Li, Linna Zhou and Valuesimplex AI Lab},
+  author = {XXXX-7},
   title  = {FinLongEval},
   url    = {https://github.com/valuesimplex/FinLongEval},
   year   = {2023},
@@ -209,7 +208,7 @@ FinLongEval 评测集的整体工作计划如下：
 }
 ```
 ## 参考
-1、[Fin-Eva 金融领域中文语言专业数据评测集](https://github.com/alipay/financial_evaluation_dataset)
+1、[Fin-Eval 金融领域中文语言专业数据评测集](https://github.com/alipay/financial_evaluation_dataset)
 
 2、[L-Eval: Instituting Standardized Evaluation for Long Context Language Models](https://github.com/OpenLMLab/LEval/)
 
