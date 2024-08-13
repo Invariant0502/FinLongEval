@@ -1,6 +1,6 @@
 # FinLongEval：面向金融场景的长文档评测集
 <div align="center">
-  <img src="https://github.com/valuesimplex/FinLongEval/blob/main/fig/logo.png" width="500px" height="120px">
+  <img src="https://github.com/Invariant0502/FinLongEval/blob/main/fig/logo.png" width="500px" height="120px">
 </div>
 
 本项目由**XXXX-1**和**XXXX-2** 共同发起，从项目筹备、评测集构建、工具评测到评测报告撰写共历时近5个月时间。本次工作为阶段性成果输出，也欢迎其他有兴趣参与本项目的个人或组织加入，为评测集的持续完善贡献力量，我们将在文末持续更新主要贡献者和贡献单位。
@@ -40,7 +40,7 @@ FinLongEval 评测集的整体工作计划如下：
 
 下图所示为本评测集的文件类型分布比例图，券商研究报告、上市公司公告/募集书（定期报告、公司发行、公司重大事项）、财经资讯、会议路演文件，占比分别为 25.4%、19.3%、17.9%、15.6%。在文件类型覆盖度和覆盖比例上面我们尽量做到与实际业务场景的需要处理文件类型分布比例保持一致。
 <div align="center">
-  <img src="https://github.com/valuesimplex/FinLongEval/blob/main/fig/%E6%96%87%E4%BB%B6%E7%B1%BB%E5%9E%8B%E5%88%86%E5%B8%83%E5%9B%BE%E9%A5%BC%E5%9B%BE.png" width="750px" height="500px">
+  <img src="https://github.com/Invariant0502/FinLongEval/blob/main/fig/%E6%96%87%E4%BB%B6%E7%B1%BB%E5%9E%8B%E5%88%86%E5%B8%83%E5%9B%BE%E9%A5%BC%E5%9B%BE.png" width="750px" height="500px">
 </div>
 
 ### 问题类型 ###
@@ -64,12 +64,12 @@ FinLongEval 评测集的整体工作计划如下：
 下图所示为本评测集的问题类型分布图。其中，阅读理解、信息提取、逻辑推理的数量最多，占比分别是 26%、25%、13%，表格提取、事件分析、文本摘要、陷阱问题等的比例相当，均在 7% 左右。这一分布比例也较为符合我们在前期做机构调研时的抽样结果。
 
 <div align="center">
-  <img src="https://github.com/valuesimplex/FinLongEval/blob/main/fig/%E9%97%AE%E9%A2%98%E7%B1%BB%E5%9E%8B%E5%88%86%E5%B8%83%E5%9B%BE.png" width="450px" height="350px">
+  <img src="https://github.com/Invariant0502/FinLongEval/blob/main/fig/%E9%97%AE%E9%A2%98%E7%B1%BB%E5%9E%8B%E5%88%86%E5%B8%83%E5%9B%BE.png" width="450px" height="350px">
 </div>
 
 ### 文件的长度分布 ###
 <div align="center">
-  <img src="https://github.com/valuesimplex/FinLongEval/blob/main/fig/%E6%96%87%E6%A1%A3%E9%95%BF%E5%BA%A6%E5%88%86%E5%B8%83%E5%9B%BE.png" width="500px" height="280px">
+  <img src="https://github.com/Invariant0502/FinLongEval/blob/main/fig/%E6%96%87%E6%A1%A3%E9%95%BF%E5%BA%A6%E5%88%86%E5%B8%83%E5%9B%BE.png" width="500px" height="280px">
 </div>
 
 上图所示为本次评测集中各个文件字数分布比例，可以看出，**超过80%以上的文件字数超过了1万字**，这一长度远远大于现有金融评测集的平均文本长度。超过 40% 以上的文件字数超过了2.5万字，这一长度超过了当下典型商用大模型的上下文窗口长度。此外，本评测集还包含了最长字数超过 **50万字**（约500页）的超长金融文档。
@@ -81,7 +81,7 @@ FinLongEval 评测集的整体工作计划如下：
 采用这一流程的原因在于，本次评测集的问题 80% 为主观类问题且文本长度在几万字量级，如果直接由人工编写非常耗费时间，同时我们也发现当下最先进的AI系统通过适当人力协助，已经能够编写接近人类水平的答案，因此我们最终决定采用这种人机结合的方式。
 ### 样例数据 ###
 如下图所示，本评测集的构成有**一级文件类型**、**二级文件类型**、**文件名**、**问题类型**、**问题**、**参考答案**等。
-这里给出了三个例子，有研报的公司财务数据提取、招股书的发行人毛利率情况分析，还给了一个陷阱问题的示例。更多样例数据请参考[样例文件夹](https://github.com/valuesimplex/FinLongEval/blob/main/data/sample_data.jsonl)。
+这里给出了三个例子，有研报的公司财务数据提取、招股书的发行人毛利率情况分析，还给了一个陷阱问题的示例。更多样例数据请参考[样例文件夹](https://github.com/Invariant0502/FinLongEval/blob/main/data/sample_data.jsonl)。
 <details>
   <summary>点击查看表格</summary>
 
@@ -115,7 +115,7 @@ FinLongEval 评测集的整体工作计划如下：
 
 结合本评测集的实际情况，对于每个问题，我们先用 GPT-4 结合参考答案从6个维度对于大模型生成的回答进行分别打分，然后每一个答案由多名人类专家参考机器打分独立进行打分，最终再汇总得到最终分数。
 <div align="center">
-  <img src="https://github.com/valuesimplex/FinLongEval/blob/main/fig/%E8%AF%84%E4%BC%B0%E6%B5%81%E7%A8%8B%E7%A4%BA%E6%84%8F%E5%9B%BE.png" width="600px" height="300px">
+  <img src="https://github.com/Invariant0502/FinLongEval/blob/main/fig/%E8%AF%84%E4%BC%B0%E6%B5%81%E7%A8%8B%E7%A4%BA%E6%84%8F%E5%9B%BE.png" width="600px" height="300px">
 </div>
 
 ## 评测结果 ##
@@ -140,7 +140,7 @@ FinLongEval 评测集的整体工作计划如下：
 - **一致性**和**忠实度**综合反映了工具在回答问题时的提取关键信息的**准确性**以及**幻觉程度**，可以看到即使是 Claude2 在一致性上距离满分4仍然有一定距离，因此对于**数据精确极高的场景目前的工具可能都无法完全满足**。
 ### 分文档类型分析 ###
 <div align="center">
-  <img src="https://github.com/valuesimplex/FinLongEval/blob/main/fig/%E8%AF%84%E6%B5%8B%E5%AF%B9%E8%B1%A1%E5%BE%97%E5%88%86-%E6%96%87%E6%A1%A3.png" width="650px" height="220px">
+  <img src="https://github.com/Invariant0502/FinLongEval/blob/main/fig/%E8%AF%84%E6%B5%8B%E5%AF%B9%E8%B1%A1%E5%BE%97%E5%88%86-%E6%96%87%E6%A1%A3.png" width="650px" height="220px">
 </div>
 
 从以上的结果中，可以得出以下结论：
@@ -149,7 +149,7 @@ FinLongEval 评测集的整体工作计划如下：
 
 ### 分问题类型分析 ###
 <div align="center">
-  <img src="https://github.com/valuesimplex/FinLongEval/blob/main/fig/%E8%AF%84%E6%B5%8B%E5%AF%B9%E8%B1%A1%E5%BE%97%E5%88%86-%E9%97%AE%E9%A2%98.png" width="650px" height="220px">
+  <img src="https://github.com/Invariant0502/FinLongEval/blob/main/fig/%E8%AF%84%E6%B5%8B%E5%AF%B9%E8%B1%A1%E5%BE%97%E5%88%86-%E9%97%AE%E9%A2%98.png" width="650px" height="220px">
 </div>
 
 从以上的结果中，可以得出以下结论：
@@ -159,7 +159,7 @@ FinLongEval 评测集的整体工作计划如下：
 
 ### 数据计算类问题分析 ###
 <div align="center">
-  <img src="https://github.com/valuesimplex/FinLongEval/blob/main/fig/%E6%95%B0%E6%8D%AE%E8%AE%A1%E7%AE%97.png" width="817px" height="457px">
+  <img src="https://github.com/Invariant0502/FinLongEval/blob/main/fig/%E6%95%B0%E6%8D%AE%E8%AE%A1%E7%AE%97.png" width="817px" height="457px">
 </div>
 从以上结果可以看出，除了 ChatGPT4 外，其他工具在**数据计算类**任务上表现都较差。我们仔细分析会发现，Claude2 以及部分国内工具的计算过程是正确的，但是最终的答案部分计算错了。因此，从这一评测来看，对于**需要数据计算的金融场景中，建议采用外部工具来处理**，如 Code Interpreter，大模型在这类问题中主要担任规划、调用和整合工具输出的作用。 
 
@@ -202,7 +202,7 @@ FinLongEval 评测集的整体工作计划如下：
 @online{FinLongEval,
   author = {XXXX-7},
   title  = {FinLongEval},
-  url    = {https://github.com/valuesimplex/FinLongEval},
+  url    = {https://github.com/Invariant0502/FinLongEval},
   year   = {2023},
   month  = {Dec}
 }
